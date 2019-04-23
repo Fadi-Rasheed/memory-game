@@ -1,0 +1,65 @@
+body {
+    background: #232323;
+    color: white;
+}
+
+.container__buttons{
+    display: flex;
+    justify-content: space-around;
+    margin:30px auto 50px auto;
+
+}
+
+.list__cards{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+
+.list__elem{
+    width: 23%;
+    padding-bottom: 20%;
+    background-image: url('budapest.jpg');
+    border: 1px rgb(230, 228, 228) solid;
+    box-sizing: border-box;
+    box-shadow: 1px 1px #ffffff;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    border-color:  #1584d0;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px
+}
+
+.message{
+    font-size: 0;
+    transition: font-size 2s;
+}
+
+.open {
+    background-image: none;
+    transform: rotateY(360deg);
+    transition: transform 1000ms;
+}
+.win{
+    font-size: 100px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50%;
+    
+}
